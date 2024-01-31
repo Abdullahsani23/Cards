@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        body{
+            margin: 0;
+            padding:0;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx-3Oo4yocOigKH1bg9dC2ORKa2zmRhejrXWvL_gbncCQySYm6HjDb_tpRrCJX9cBH_68&usqp=CAU);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .main{
+            width: 100%;
+            height: 750px;
+            /* border: 2px solid black; */
+
+        }
+        .main2{
+            width: 80%;
+            height: 600px;
+            /* border: 2px solid blue; */
+            position: absolute;
+            margin-top: 100px;
+            margin-left: 160px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .cards{
+            width: 30%;
+            height: 600px;
+            border: 1px solid blue;
+            border-radius: 25px;
+            box-shadow: 25px;
+            
+        }
+        .img{
+            width: 100%;
+            height: 250px;
+            border-radius: 25px;
+        }
+        .img>img{
+            width: 100%;
+            height: 250px;
+            border-top-right-radius: 25px;
+            border-top-left-radius: 25px;
+        }
+        button{
+            border-radius: 25px;
+            margin-top: 15px;
+            margin-left: 10px;
+            /* background-color: blueviolet; */
+        }
+        a{
+            color: black;
+            text-decoration: none;
+
+        }
+        button:hover{
+            background-color: white;
+            /* border: red; */
+        }
+a:hover{
+    /* background-color: white; */
+    color: blueviolet;
+    /* border: red; */
+}
+.description{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    /* border: 2px solid navy; */
+    /* margin-left: 10px; */
+    margin-top: -15px;
+
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 5px;
+}
+p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 2px;
+    margin-top: -15px;
+    text-align: justify;
+}
+.profile{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    background-color: white;
+    /* border: 2px solid gray; */
+}
+#drs{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    cursor: pointer;
+
+}
+h3{
+    margin-left: 10px;
+}
+#para2{
+    margin-top: 40px;
+    margin-left: -70px;
+}
+@media only screen and (max-width: 400px)
+{
+    .main2{
+        display: flex;
+        flex-direction: column;
+        column-gap: 100px;
+        width: 1500px;
+        height: 5%;
+        margin-top: 2px;
+        
+
+    }
+    
+
+}
+
+    </style>
+    
+
+
+
+
+
+</head>
+<body>
+    <div class="main">
+        <div class="main2">
+            <div class="cards">
+                <div class="img">
+                    <img src="https://www.cozmoderm.com/wp-content/uploads/2023/02/Dermatology.jpg" alt="derma">
+                </div>
+                <button><a href="#">Dermatology</a></button>
+                <div class="description">
+                    <h1>What is Dermatology?</h1>
+                    <p>Dermatology involves the study, research, diagnosis, and management of any health conditions that may affect the skin, fat hair, nails, and membranes. A dermatologist is the health professional who specializes in this area of healthcare</p>
+
+                </div>
+                <div class="profile">
+                    <img id="drs" src="https://img.freepik.com/free-photo/female-doctor-hospital-with-stethoscope_23-2148827776.jpg" alt="drs">
+                    <h3>Dr Anna</h3>
+                    <br>
+                    <br>
+                    <p id="para2">Yesterday</p>
+
+
+                </div>
+
+            </div>
+            <div class="cards">
+                <div class="img">
+                    <img src="https://www.opaortho.com/wp-content/uploads/2021/12/Doctor-shows-the-spine-conditions.jpg" alt="ortho">
+
+                </div>
+                <button><a href="#">Orthology</a></button>
+                <div class="description">
+                    <h1>What is Orthology?</h1>
+                    <p>Orthology is the study of linguistic norms. The word comes from Greek ortho- ("correct") and -logy ("science of"). This science is a place where psychology, philosophy, linguistics and other fields of learning come together. </p>
+
+                </div>
+                <div class="profile">
+                    <img id="drs" src="https://yt3.googleusercontent.com/ytc/AIf8zZRQsMGuKeHk6Oi0cVEFIu3OHYhKLpaHOInaXAqW8w=s900-c-k-c0x00ffffff-no-rj" alt="drs">
+                    <h3>Dr Steev</h3>
+                    <br>
+                    <br>
+                    <p id="para2">2 Weeks ago</p>
+
+
+                </div>
+
+            </div>
+            <div class="cards">
+                <div class="img">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUWFRgWFRUVGBgYGBgaEhUYEhESERgSGBgaGRgYGBgcIS4lHB4rHxgYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QGhISHD0rJSsxNDE0NDE0MTQ0NDE0NDQxNDQxMTQ0NDQxMTE0PzQ3NDQ0MTQ0MTQ0ND0/NDQ0NzQ0NP/AABEIALEBHQMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQIDBAUGBwj/xABCEAACAQIEAwYEAgcGBQUAAAABAgADEQQSITEFQVEGImFxgZETMqGxB1IUI0JywdHwYoKSk9LhM0OiwvElVGNzsv/EABoBAQEBAQEBAQAAAAAAAAAAAAABAgMEBQb/xAApEQEBAAIBAwQABgMBAAAAAAAAAQIRAxIhMQQTQVEiMmFxgeEjUqEF/9oADAMBAAIRAxEAPwD2CEIQohCEAhCRhw14DyZG1XW0qNTJ1ud+ptEqsbC+45wLT36yIG8MNVvoYEWaBRxlgrX2sZ5VwjF/+rUjfQOQPJgw/jPT+NtZG8RPKUw+TidKx3yuP7pv/CRXukUREOkWVHPdp8MSudd0Icem49pPgawdFYcxNWugYaicLxzji4BagYXJ1oJ1Y8vIGd+PLtquPJj8wnbPtUmFXIlnrMO6vJB+Zv5Ty9O1mLVy/wAS7E3N0Ujy8BMytjHqu71GLO5LMT48h0A2kLpGWVvhccZPL1Lsz2oTFDK9kqgd5L6MPzLOhzBQSeU8JwxcOroxV1N1YbgietdmOL/pgRGFnuPijkVGpI8Db6zeOe53Yyx1ezu+B0CqZ2+Z9T4LyEssNZOdNOkqVcSgbKWseV9J5sr1XbvjNTR08+/Ep/1mGT8zqPqJ34M84/E6pavhT0qA+gYTLTt6j6KvlNTDqLATGw5zOPITZoHWVDjHLUIiEaxXECdKoPhJJSvHrWIgWoREe8WAQhCAQhCAQhCAQiGQs58oC1X5D1keHGpgRHUOflKIy2kay92NJ0kzDSQVcPo0tVRqDKtJe9LdQSjC7RnuHynlvH6pTFYWoDpov1sfvPTO09cIne56TzStQqYtHqU2pqmHbLZu9VYHd1HQHT3mbdLHsOD4ujZEAOYgXvoL2lyqrlgM1hzt0nneCevhRhWxDq5xBCoqrlqI+XMoI5i3PrPSaN8oLb21lD7TgvxR4MKtAOB3qZv/AHToZ3srcQwwdGUi4IIPrLLpNPmmrR5jdfqJC5E0+0OFahXemeRIHip1B9ph0tWY8p0tYifB/P7z1f8ACbA3NWsR8tqaHxPeb/tnkVJrODe2us+h+xnDv0fBU1Is7jPU65n1t6Cw9Jm3WJJutmo+srYuirjUfzjyYoPKc3Ri12el8j3HQi884/EzHFqtEHdQWPncW+07jtLxilQF3cb6KNWPkJ5N2g4iMRic791NALm5CeNvOVHt3CCDTR/zIp+k1cM2s4jsn2moPSSiai/EQBbXsGA0BU89J2uCaWC028CYE6wtALRg3jgZFSa5PhpILVNrSeUmeWqTXAgPhCEAhCEAiGBMrV63SAprd7wkmhmWzm+vp4y7RqAiUOfSOTQHyjQbjxETNpAYV2krbRlo+8CFF70sNI1XWSQOL/EJG+ASu4P8J5qnDa6UfjoBkY2Zc+VjfmBPaeL0gwIIuOk5mt2aWooUOyLe4UWK38jJYsrzzDJiHqLWLkPSINPvFyGHyjX2tPeOFVnekjOAHKjOBtmtrac3wfsxTptmN3YbXsFB6hROso7RIU9oRCYimB5J+MXBypp4lRpfJU9fkJ9dPWeYopF59Kdp+FLicNUpN+2hA8G5H3nzg9JkzI+jIxVx/aU2M3ixV7srwr9JxlCja6s4ap/9ad5r+Btb1n0didBYTy38FuFXaviWHygUqZtzNmcj/oHpPU6wvM5NRVEzuM474SFufKaFRrTk+1znIB1ufYTKvPcDQPEMY2diUTUi+4vYD11npeG7K4VU/wCCh0/KJwH4X3NWrYX+Uk8gLmer5mNuUqOM4x+H1JkZ6V0de8hU2GmtiIvYntG5qrhqrXddA35l5X8dLTt65ZVvuLa+E8WwFXJxZSNAa9rbbmUe7u1mkglfEnYydDcQGVTaVsK11v1Jk+K+U+Up4NtLQLcnovaQqNIgaQaCm4vFkGGbS0ngEIQgUq1yZCB7x61DBngQ1VjaT5hY6Mv9XkzteVHU3uNxv4iBY/SLanlv5dZZvMmq24OzA29ZLwjFZ6Yv8wurfvKbGUaN44GQB5IrQJIojQYAwKnEBK+FXuS1jBKuAbQjxkVepSemeUqUmsY3EcRRNzc/lGp9Tyltk8klvhomZ+L4oic8x6La1/OYmN4q9S41VfyrqT5nnKYW4+X3O04Zcv8Aq74cP+zp8Jxam+hJRujWAPkdp49+KnBvgYn4yiyVxc6aCoo19xY+hnZm19QV+0MThVqqEdUqKCCqtqAw2IB2MY82vJlwfVbnYThX6NgKKEWdl+JU6537xHpcD0m1WcAXMxKPGXXR0uBzFgfcafSOfiaOdSRysRsfMTfuSud48p8LDtfUzme1lJmQhRc5GsPEidIrg7EHyIMzeLqcrHoptNRlzH4Y8HejTdqi2Z3BGxORVA+956EiazO4KmWmo/siaqysgWvrsRaeL8eoZOLUyBoaiH2b/wAT2NzOW4vhKbYinmRCQ+cMR3wwsPm6eEo66tsI7DNpGVjoImGbWBJiz3TKGAMuY9u6fKZeFqHYSDUL30EXaFBLCDmUTUG1lyUUOkuU2uJA6EIQKl4kfaFprQiKCRlF6CWLRvw40Kz4dDuNtpWp4ZULZBbMxZtSQWO58JpNSiJRAjQqopPhJBf+hLPw4LTEmhGoMcA0lCRteqqIzt8qKWbyUXMVWLxTjNFCVdjmX5lCO5BtexIFgdRz5zBp9pBc5F35k6j0tG4GiKl3bUuxZtebG5mnS4ei7ATz3kt8PTOLGeUC1Kr7k29QNfCPXBE7+01aIAEjduc52W961LJ4inSwgF7yZkVRGVsUqjeZbY1qjZEBJOwHTqTyENyW96s1aqcyJGpptsdozD9nmvapUW3RFJb/ABN/KatDg1BRYIDzLMSWPSanHl8s5cuM8M5Sutm8N4xnpg2zAE673mo3DqPKmn+GMbhVE/8ALX0zL9jL7V+2fen0zTikB0ex5W3vKbccRiyMzMLkam4IBtcTTr9naRHdZ0v0ZSP+oGZmK4KlNT3mcgDU2Wwv0W0s48vinuYfMXcJxsXAU3GlxYbTqWbSYvC+F0UbMqajYlmax6i50PjNYtOuOOU81w5MsctdM0SY3FE/XUj1vNmZWPF69MdLn7Tbm1652iUDrI6z6yJMUoJ1+W1/WQT8UeyHylDhdiSZLxt/1Z8RK3BF0vKNotaAXmYKsjqNc6mwgPNTaSU3NwT7SKkOnvJSBeQXkcMNI6UUrZdeUujXWBXiyS0QqJoMtFAilIoTxgIVi5YZT1gb+EAyx4EZmPT+MVXEBxE5bt/jvh4bID3qrBfHIvec+Wij+9OqM8s/ETiKvilplgBTSwvpdn7zlSd9Mg06TGXhrD802XgGPAQKTtOjp4oHnPPsNps1psYZ3HJttdDOHTXq6o6p8aoG8yMbxYDYzJenUJNiSPIx+GwDk/Kb8y1wB7zPTk3MsJ8osTizlLO2VRzJ9pUwvbNqS5aVJbkktUe9z0AVbGwHU8zMztPVvVNNTdaeh6Gp+0fS+X0PWZKJOVyuN7PpcPpsbjMspvfw7rhfa92b9Yqa/lDL9yZ2eGxiOl1YdT4ec8XViJrVsVWoKmY6VaYdLMT3GuO90Ph4zePLlPPdz5/RceVmu1d5xHtElP5bMet7L/vOfqdt3B0SmR0s4+uacficYz7mXOEcKes1hJ155XtXSel4OLH8U3+70DgnauliCEINOodkYgq/7jcz4Gx85pYimCWzfKQb+3855NxLCmk9r2IOhBsQRsQeRnovZ7iZxOEDtq6EpU8XUDveqlT5k9J34s7b05eXz/V+lmGM5MPF/wCNzhjXRfEXl7JMjgNTMi+GntpNidXzyBJklM2IOvyL9WP+012NgTMrhneLv+dzb91dBLsWnRtxa/jM/hWCLozu5uztta1lJAmpVqBRdvlBGa29uckwyKEGUWU3IHQE3EgpcVH6tvAaekocEqG9pd4xUApteZPB8QM1pqJXT1altOcKdLmZDQcE35y2GsJQ2pUyyMOTI6lVSY9HJ2FpBIVJ0l7Ctp9pVpi2p3jlxAGkgtXheIITQW8S8IAQFEUiAiwACOFoggZA2qyqpY6AAknwGpnleMV6rswBOZiTra7E3noPHn/V5Pz6H90b/wABOfSgFF5ZdJZtg0uHW+YbanXlNTBi0n+D7nU/wH9dYhpWkvdrawKfMSF9DJqDaQqU7zKx5bi1u7k7l3J8yxJlcidBxnhFQVnyU3ZS2ZSqMws3eIuByJI9JmPwnEHahV/ynt9p8/KWWzT9Vx54XDG7nj7QYnCuiI7Cy1Axp66kIbG45cvedJ23w4CYW3/LRqZ81WmbfeTcdw6stCio0o4inhieoemhY+9x6SPtDUNanWKi5THFFA6NTyAf4hadenUseP3Lnnhb93+nHNprN/H06mCqBM92ZEckDLbNcFd+RUi8lxfZ00sZQoXzhzTJJAsRmPxAPAZW9CJb7X0nxJo16VN3DCshKIz2FOsypfKNLg395mY2S/btlyY5Z4zfay/05PG4kuSSbmdl+GJJXEryvSI6ZiKgP/5X2nJvwbE/+3r/AOTU/lOu7P8AxMHgatQ02+I7M4QqQwCgImZd9wzeRm+GW5brh67PCcFxl+nW8PpZGC8muw87kEe4+s155n2R7ZVK9RKNbIWDOQyqUYXsSGG2XTcczPQauJyrc+nnPW+Cj4riCFyr8zaDzOgj6VLIqqP2QBKWGUvUBOya+bn+Qmo0gWluM2oBuR10/nJdhERI2oeUoyePoWosB1H3mXw3CFLG97jXwnSYrDF0aw2Fz5Cc69a2gNpYy6HC1F2Gp59IrsXNthMrhb2ueu010pG1ybX95Q5KaiThgJGpHIep0gqqdd/rAbUxPSQ5jLQt0HvHd3wkCtUdfmRvMDMPcRUxYPOaUY9FW+ZVPjYX942qv8YRy1BGvw9f2Sy+tx7GQnBONmU+d1/nGxbDiKHlFqNXp7Mp+5EQs4/Yf/AT9rwNJTFtMwYorvcehH3k64xdNYGTxStmcj8vdHpv9ZWROZ9BLGKQB28STfzN45E0lFRKese1KWfhx/w4GetK0kyS78KKKUlWVg8fwFR6eak7q6XICOy515rodTzHlbnOAqY6vyrVv82oP4z18U5x/ars2WJrUVud6iAanq6Dr1HPca7+Xn48r+LF9f8A831WE/x8kmvis3sPT+IaiuSSlShWBJJYsrNmJJ56CR9kscmXF1KgzKrJiFHMurVGXfnmy28bSjwHiIw71WJNmoOgsL3qEqV8tiL+M57Jb+v66ThOTUn8vpZel68+T4l1r+HdcFr/ABMOuLY3fCjF5jzL1BnX6uROLoYysihUrVVUfsrVqKt+ZsDaT4biTpRq0VtkrZM975hkN+756A+AjuD8KqYioEpLc7ux+RF/Mx/huZLlctSeVx48eLruetb7fpPK/wBnaOKxNYIMRiAos1V/j1u7Tvt83zHYe/Iz0+thFP8A5v8AeM4RwqlhaQRfN3NgzNzY/wAByEfVxqcrn0sPrPZxzon4r3fA9Vze9n+Gdp4Y2I4MgcsiIGKkF8i5tuZjsNSdQpds+X9hlLC48eY9ZpUsWl9b/eaCIpFwBY850ll8PLZZ5eX9peMY9a2TDhsps36qkb5j+yWOntO47NtXekjYhbOVHxBt3psCgoOgHtJDoJUITI7Rd49UhE2BGreU5LH8OZXZbc9PLkZ1mHbKfOSYgBxYqPA8xLKMbhuBCKOZPM7S61I7nvf10kpA2iK9vKNoZSZX8+YP8o9Ty0HhHvRB7w0PUfxkbi/nCh7cxIDRXlJA5kFRtZBvQhCAQhCAQhCAXmXiqYLm4B8xeakp1l7xlgpfAH5R7CPFOT5YZZRDkjgkktKPFQ+QBM1iTny/Nbl6SZXU2uOPVdEfiNINlLqD6299pKjgi6kEdQQR9JzH6Fe+h05EWPsYi0CuouPIlT9Jw96/Meq+nmu1dK2JQGxdL9M63j15ETl6eEuL2HtFCFCAGcXP7LWEe7+iXg+qk7RdlFrkvSypUNywOiOfH8rePPn1nJ8F4BnruldWX4ahmQ3UsSbLqN10OoOtt51y8QrJ+3m/eUH67xcRxNnXKyKDtmAOYeRvt4TlljhleqPbxep58MLhe8+L8xU/QcMl7U6Yt/8AHT+9ryRcUEUlLLfUhe4DbraZmIovchWBvzOkZVoVSuSwvzOYbSfsxbb+a7ar8TLbsTbxJkLYyYZw1VTsfMaj+ceKrAd4e5A+kjGsWwMUZdwPGSmh1HS/2PKc9+nLzkWIxI3EdVl7Jljjk7Nu0CnZbX0BLX1PUWklLGuDdtRzFhceVp5+2KuD0sZ1OAxeemjndkUnztr9Z7ODLq3Mnh58ejVjrkYGxGx2j7TM4XXulvym3odR/GaKtNWaumJdzZ1o8GMBjWMKRzreSMtxIGMkpNIH0TbQyu7ZW8DJqhkDrmXxEBBU1jayayMrD48DfhCEAhCEAhCEAlWp8xlqVanzGWBsIsSUJEEdaJaBHVoq+jKD9/QzMxPAw18jsngRnX01BmvFmbjL5jWOeWPiuafgldfldX8NUP10+sz8QlVGPxEYLb5txfwO07aIwuJi8OPw6Tny+XAfpn9k2vY84qcSTYidhiODUH1akl+oGQ+62mNiezin/hsQfyv3l99x9ZzvFp2x55fLI/TUYn6ytX4kq8/KLiuH11unwX15otx/iGkqDsxiG3TL++6fYEzPRa3eTGfKDE8WJ2MzKmJJvNodlat7E0wf33P/AGRz9kKoF89P3qf6ZZx1zvJPtzpq9ZGcV4zcfslWOz0vVn/0SqeylYbtT/xP/pl9u093GMmpi7AnpOq4dWK00Xoig+dtZj0uzVXODUKBFN7KWJYg6A3Ggm6uE8fvPTwYdO7Xl9Rn1akbvZ3FZndf7Kn2JB+4nRK05js/h8tS4/aUj7H+E6YD0l5PzOeHhIjR0rHEou59gTGNxFOSk+dhMtLTCKgtKS46/QfWDvfc39ZFWatZRzv5SFK+vhIWAkQa0DQZAZUq0NZJSxQ6ywGBga8IQgEIQgEIQgEqvuZalWoe8ZYEi2iXheUFoQhALQhCACEIQHAaSsFlldpWqHTSZqq76m0c9ORn5k03vceA5y3aBQal37+Ai1Kd5YcayNmhFU0JTqUtZq3lSsNZqIrphwQdNtfTnIThR0l+iwDD2PkYrpYmWVLFPApldfMD30ms1C+5PvKQTn01mkRzky7mKs1CVnw81AIjU5lWI+HPKMyPNn4YiFRKrLVXjWptzmqqFtFF/Hl7yzS4eN3N/AaD/eQYVHh7Oe7e/wBPUzYocLIHec38P95pKoAsAAOg0EWBLCEIBCEIBCEIBKdT5jCEsCCLCEqCEIQCAhCA4RDCEKVdpWfYxYTNFen8/oJaaEJIqCrvK7whKhFkFfeEJUMWWK+/9dIQlgZSl5dh5D7QhFIVd5IYQmVQGQ19oQgauF+RfKSwhKCEIQP/2Q==" alt="cardio">
+                </div>
+                <button><a href="#">Cardiology</a></button>
+                <div class="description">
+                    <h1>What is Cardiology?</h1>
+                    <p>Cardiology is the study and treatment of disorders of the heart and the blood vessels. A person with heart disease or cardiovascular disease may be referred to a cardiologist. A cardiologist specializes in diagnosing and treating diseases of the cardiovascular system.</p>
+
+                </div>
+                <div class="profile">
+                    <img id="drs" src="https://professions.ng/wp-content/uploads/2023/07/The-Process-of-Becoming-a-Doctor-in-Nigeria-A-Roadmap2.jpg" alt="drs">
+                    <h3>Dr John</h3>
+                    <br>
+                    <br>
+                    <p id="para2">One Month ago</p>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+</body>
+</html>
